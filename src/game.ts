@@ -11,7 +11,7 @@ createScene()
 stick(22, 0, 22)
 
 // video streaming
-createVideoStream()
+// createVideoStream()
 
 // create 
 // sound 

@@ -1,13 +1,13 @@
 {
   "display": {
-    "title": "DCL Scene",
-    "description": "My new Decentraland project",
+    "title": "GOLDENEYE",
+    "description": "GOLDENEYE decentraland casino",
     "navmapThumbnail": "images/scene-thumbnail.png",
     "favicon": "favicon_asset"
   },
   "owner": "",
   "contact": {
-    "name": "author-name",
+    "name": "GOLDENEYE",
     "email": ""
   },
   "main": "bin/game.js",
@@ -21,15 +21,7 @@
       "1,0",
       "1,1",
       "1,2",
-      "1,3",
-      "2,0",
-      "2,1",
-      "2,2",
-      "2,3",
-      "3,0",
-      "3,1",
-      "3,2",
-      "3,3"
+      "1,3"
      ],
     
     "base": "0,0"
