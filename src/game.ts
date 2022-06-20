@@ -3,6 +3,7 @@ import { createScene } from './scene'
 import { sound } from './sound'
 // import { createVideoStream } from "./stream/stream1";
 
+// love to code . come
 // create casino scene
 createScene()
 // create stick NPC
