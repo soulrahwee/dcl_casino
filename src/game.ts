@@ -1,9 +1,7 @@
-import { stick } from "./npc";
-import { createScene } from "./scene";
-import { sound } from "./sound";
-import { createVideoStream } from "./stream/stream1";
-
-
+import { stick } from './npc'
+import { createScene } from './scene'
+import { sound } from './sound'
+// import { createVideoStream } from "./stream/stream1";
 
 // create casino scene
 createScene()
@@ -13,8 +11,8 @@ stick(22, 0, 22)
 // video streaming
 // createVideoStream()
 
-// create 
-// sound 
+// create
+// sound
 // sound place in hall
 // mid
 sound
@@ -29,8 +27,3 @@ sound(9, 9.5, 87.5)
 sound(53.5, 9.5, 30.6)
 sound(53.5, 9.5, 87.5)
 sound(53.5, 9.5, 62.8)
-
-
-
-
-
