@@ -3,7 +3,7 @@
         // stream1.addComponent(new GLTFShape('models/baseDarkWithCollider.glb'))
         stream1.addComponent(new Transform({ scale: new Vector3(1, 1 ,0) }))
         engine.addEntity(stream1)
-
+        // make screenstream
         const screenStream1 = new Entity()
         screenStream1.addComponent(new Transform({ position: new Vector3(22.8, 1.3, 43.7), rotation: Quaternion.Euler(0, 90, 0), scale: new Vector3(1.4, 1, 1.4)}))
         engine.addEntity(screenStream1)
