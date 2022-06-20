@@ -28,9 +28,6 @@
         screenMaterial.emissiveTexture = videoTexture
         screenMaterial.emissiveColor = Color3.White()        
         screen1.addComponent(screenMaterial)
-
-        videoTexture.reset()
-        videoTexture.seek = 10
         videoTexture.play()
         videoTexture.volume = 0 
         videoTexture.loop = true

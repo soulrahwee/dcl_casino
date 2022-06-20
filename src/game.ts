@@ -4,20 +4,16 @@ import { sound } from "./sound";
 import { createVideoStream } from "./stream/stream1";
 
 
+
 // create casino scene
 createScene()
 // create stick NPC
-stick(45, 0, 30)
-
+stick(22, 0, 22)
 
 // video streaming
 createVideoStream()
 
 // create 
-
-
-
-
 // sound 
 // sound place in hall
 // mid
