@@ -1,5 +1,5 @@
 function createVideoStream(){
-    const stream1 = new Entity()
+        const stream1 = new Entity()
     stream1.addComponent(new GLTFShape('models/baseDarkWithCollider.glb'))
     stream1.addComponent(new Transform({ scale: new Vector3(1, 1 ,0) }))
     engine.addEntity(stream1)
