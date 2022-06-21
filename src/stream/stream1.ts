@@ -1,40 +1,40 @@
 
-        const stream1 = new Entity()
-        stream1.addComponent(new GLTFShape('models/baseDarkWithCollider.glb'))
-        stream1.addComponent(new Transform({ scale: new Vector3(1, 1, 0) }))
-        engine.addEntity(stream1)
+const stream1 = new Entity()
+stream1.addComponent(new GLTFShape('models/baseDarkWithCollider.glb'))
+stream1.addComponent(new Transform({ scale: new Vector3(1, 1, 0) }))
+engine.addEntity(stream1)
 
-        const screenStream1 = new Entity()
-        screenStream1.addComponent(new Transform({ position: new Vector3(19.33, 0.99, 56.34), rotation: Quaternion.Euler(0, 90, 0) }))
-        engine.addEntity(screenStream1)
+const screenStream1 = new Entity()
+screenStream1.addComponent(new Transform({ position: new Vector3(30, 0.99, 60), rotation: Quaternion.Euler(0, 90, 0) }))
+engine.addEntity(screenStream1)
 
-        const screenTransform1 = new Entity()
-        screenTransform1.addComponent(new Transform({ position: new Vector3(0, 0.99, 0) }))
-        screenTransform1.getComponent(Transform).rotate(Vector3.Right(), 0)
-        screenTransform1.setParent(screenStream1)
+const screenTransform1 = new Entity()
+screenTransform1.addComponent(new Transform({ position: new Vector3(0, 0.99, 0) }))
+screenTransform1.getComponent(Transform).rotate(Vector3.Right(), 0)
+screenTransform1.setParent(screenStream1)
 
-        const screen1 = new Entity()
-        screen1.addComponent(new PlaneShape())
-        screen1.addComponent(new Transform({ scale: new Vector3(5.45, 2.90, 2.90) }))
-        screen1.getComponent(Transform).rotate(Vector3.Up(), 0)
-        screen1.setParent(screenTransform1)
-        screenTransform1.getComponent(Transform).scale.setAll(0.6) // You can change the scale of the screen here...
+const screen1 = new Entity()
+screen1.addComponent(new PlaneShape())
+screen1.addComponent(new Transform({ scale: new Vector3(5.45, 2.90, 2.90) }))
+screen1.getComponent(Transform).rotate(Vector3.Up(), 0)
+screen1.setParent(screenTransform1)
+screenTransform1.getComponent(Transform).scale.setAll(0.6) // You can change the scale of the screen here...
 
-        const videoClip = new VideoClip(
-            'https://bafybeibjfx2wogg4d5y3ucgosyty2jmgpfxvfluly6oqvmw5fnafkss6wq.ipfs.dweb.link/DCL_Cake_1920x1080_15s_zoom.mp4'
-        )
-        const videoTexture = new VideoTexture(videoClip)
-        videoTexture.play()
-        videoTexture.loop = true
+const videoClip = new VideoClip(
+    'https://bafybeiew5jjs2utcwzprnytamseee2nfsi2yli42y2afe2mm57h2hgu2sa.ipfs.dweb.link/Xmas_Quest.mp4'
+)
+const videoTexture = new VideoTexture(videoClip)
+videoTexture.play()
 
-        // Adjust screen material to increase the brightness and clarity
-        const screenMaterial = new Material()
-        screenMaterial.albedoTexture = videoTexture
-        screenMaterial.emissiveTexture = videoTexture
-        screenMaterial.emissiveColor = Color3.White()
-        screenMaterial.emissiveIntensity = 0.6
-        screenMaterial.roughness = 1.0
-        screen1.addComponent(screenMaterial)
+videoTexture.loop = true
 
-       export = stream1;
-    
+// Adjust screen material to increase the brightness and clarity
+const screenMaterial = new Material()
+screenMaterial.albedoTexture = videoTexture
+screenMaterial.emissiveTexture = videoTexture
+screenMaterial.emissiveColor = Color3.White()
+screenMaterial.emissiveIntensity = 0.6
+screenMaterial.roughness = 1.0
+screen1.addComponent(screenMaterial)
+
+export = stream1;

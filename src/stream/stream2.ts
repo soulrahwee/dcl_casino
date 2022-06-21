@@ -21,7 +21,7 @@ screen2.setParent(screenTransform2)
 screenTransform2.getComponent(Transform).scale.setAll(0.6) // You can change the scale of the screen here...
 
 const videoClip = new VideoClip(
-    'https://bafybeibjfx2wogg4d5y3ucgosyty2jmgpfxvfluly6oqvmw5fnafkss6wq.ipfs.dweb.link/DCL_Cake_1920x1080_15s_zoom.mp4'
+    ''
 )
 const videoTexture = new VideoTexture(videoClip)
 videoTexture.play()
