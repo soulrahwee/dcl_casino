@@ -1,5 +1,4 @@
-function createVideoStream(){
-        const stream1 = new Entity()
+    const stream1 = new Entity()
     stream1.addComponent(new GLTFShape('models/baseDarkWithCollider.glb'))
     stream1.addComponent(new Transform({ scale: new Vector3(1, 1 ,0) }))
     engine.addEntity(stream1)
@@ -21,7 +20,7 @@ function createVideoStream(){
     screenTransform1.getComponent(Transform).scale.setAll(0.6) // You can change the scale of the screen here...
 
     const videoClip = new VideoClip(
-        'https://bafybeidqbgmk2py67li26v6zjikjfxorzjll4zkjuimgobeoc6izim43ty.ipfs.dweb.link/test1.mp4'
+        'https://bafybeibjfx2wogg4d5y3ucgosyty2jmgpfxvfluly6oqvmw5fnafkss6wq.ipfs.dweb.link/DCL_Cake_1920x1080_15s_zoom.mp4'
     )
     const videoTexture = new VideoTexture(videoClip)
     videoTexture.play()
@@ -35,6 +34,5 @@ function createVideoStream(){
     screenMaterial.emissiveIntensity = 0.6
     screenMaterial.roughness = 1.0
     screen1.addComponent(screenMaterial)
-    }
 
-    export = createVideoStream;
+    export = stream1;
