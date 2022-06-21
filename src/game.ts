@@ -27,9 +27,3 @@ sound(9, 9.5, 87.5)
 sound(53.5, 9.5, 30.6)
 sound(53.5, 9.5, 87.5)
 sound(53.5, 9.5, 62.8)
-
-
-function stream() {
-    throw new Error('Function not implemented.')
-}
-
