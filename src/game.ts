@@ -1,7 +1,7 @@
 import { stick } from './npc'
 import { createScene } from './scene'
 import { sound } from './sound'
-// import { createVideoStream } from "./stream/stream1";
+import { createVideoStream } from "./stream/stream1";
 
 // love to code . come
 // create casino scene
@@ -10,7 +10,7 @@ createScene()
 stick(22, 0, 22)
 
 // video streaming
-// createVideoStream()
+createVideoStream()
 
 // create
 // sound

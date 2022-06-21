@@ -20,17 +20,21 @@
         screen1.setParent(screenTransform1)
         screenTransform1.getComponent(Transform).scale.setAll(0.6) // You can change the scale of the screen here...
 
-        const videoClip = new VideoClip('https://bafybeidqbgmk2py67li26v6zjikjfxorzjll4zkjuimgobeoc6izim43ty.ipfs.dweb.link/test1.mp4')
+        const videoClip = new VideoClip(
+            // "https://player.vimeo.com/progressive_redirect/playback/721301128/rendition/240p/file.mp4?loc=external&signature=134cfc475c1b41db4a5d6ad8a2cf6d54f769cce784e77d40474ccadf575862a6"
+            'https://bafybeidqbgmk2py67li26v6zjikjfxorzjll4zkjuimgobeoc6izim43ty.ipfs.dweb.link/test1.mp4'
+            )
         const videoTexture = new VideoTexture(videoClip)
+        videoTexture.play()
+        videoTexture.volume = 0 
+        videoTexture.loop = true
 
         const screenMaterial = new Material()
         screenMaterial.albedoTexture = videoTexture
         screenMaterial.emissiveTexture = videoTexture
         screenMaterial.emissiveColor = Color3.White()        
         screen1.addComponent(screenMaterial)
-        videoTexture.play()
-        videoTexture.volume = 0 
-        videoTexture.loop = true
+        
     }
     
 
