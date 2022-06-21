@@ -1,6 +1,30 @@
 {
   "extends": "@dcl/eslint-config/sdk",
+  "compilerOptions": {
+    "invalidProperty": true
+  },
   "parserOptions": {
-    "project": ["tsconfig.json"]
-  }
+    "project": [
+      "tsconfig.json"
+    ]
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off"
+  },
+  "parserOption": {
+    "project": [
+      "tsconfig.json"
+    ]
+  },
+  "prettier/prettier": [
+    "error",
+    {
+      "endOfLine": "auto"
+    },
+    {
+      "usePrettier": false
+    }
+  ]
 }
