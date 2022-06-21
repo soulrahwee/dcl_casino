@@ -5,11 +5,11 @@ stream1.addComponent(new Transform({ scale: new Vector3(1, 1, 0) }))
 engine.addEntity(stream1)
 
 const screenStream1 = new Entity()
-screenStream1.addComponent(new Transform({ position: new Vector3(30, 0.99, 60), rotation: Quaternion.Euler(0, 90, 0) }))
+screenStream1.addComponent(new Transform({ position: new Vector3(50, 0.99, 50.50), rotation: Quaternion.Euler(0, 1.50, 0) }))
 engine.addEntity(screenStream1)
 
 const screenTransform1 = new Entity()
-screenTransform1.addComponent(new Transform({ position: new Vector3(0, 0.99, 0) }))
+screenTransform1.addComponent(new Transform({ position: new Vector3(0, 1.50, 0) }))
 screenTransform1.getComponent(Transform).rotate(Vector3.Right(), 0)
 screenTransform1.setParent(screenStream1)
 
