@@ -16,6 +16,7 @@ stick(22, 0, 22)
 // sound
 // sound place in hall
 // mid
+sound
 sound(30, 9.5, 62.8)
 sound(30, 9.5, 27.4)
 sound(30, 10, 91)

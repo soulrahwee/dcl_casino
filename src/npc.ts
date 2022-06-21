@@ -1,9 +1,9 @@
 import { NPC } from '@dcl/npc-scene-utils'
-import { Dialog } from '@dcl/npc-scene-utils'
+import * as npcSceneUtils from '@dcl/npc-scene-utils'
 
 export function stick(x: number, y: number, z: number): void {
 
-    const stick_chat: Dialog[] = [
+    const stick_chat: npcSceneUtils.Dialog[] = [
         {
             text: "'Hello My name's stick!!!'",
             // triggeredByNext() {
