@@ -2,9 +2,10 @@ import { stick } from './npc'
 import { createScene } from './scene'
 import { sound } from './sound'
 import 'stream1'
+import 'stream2'
 
 // love to code . come
-// create casino scene
+//create casino scene
 createScene()
 // create stick NPC
 stick(22, 0, 22)
