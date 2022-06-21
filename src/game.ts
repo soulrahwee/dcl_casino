@@ -1,14 +1,15 @@
-import { stick } from './npc'
+import { stick } from './npc&sound/npc'
 import { createScene } from './scene'
-import { sound } from './sound'
+import { sound } from './npc&sound/sound'
 // import { createVideoStream } from "./stream/stream1";
+import { woman } from './npc&sound/animation';
 
 // love to code . come
 // create casino scene
-createScene()
+// createScene()
 // create stick NPC
-stick(22, 0, 22)
-
+stick(15, 0, 1)
+woman(1, 0, 15)
 // video streaming
 // createVideoStream()
 
