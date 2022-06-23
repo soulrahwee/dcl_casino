@@ -9,7 +9,7 @@ import stream2 = require("stream/stream2")
 stream1
 stream2
 // create casino scene
-//createScene()
+createScene()
 
 // create stick NPC
 stick(22, 0, 22)
