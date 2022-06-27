@@ -5,7 +5,7 @@ stream4.addComponent(new Transform({ scale: new Vector3(1, 1, 0) }))
 engine.addEntity(stream4)
 
 const screenStream4 = new Entity()
-screenStream4.addComponent(new Transform({ position: new Vector3(-27.66, 1.99, 80), rotation: Quaternion.Euler(0, 91.10, 0) }))
+screenStream4.addComponent(new Transform({ position: new Vector3(-27.66, 1.99, 76.90), rotation: Quaternion.Euler(0, 91.10, 0) }))
 engine.addEntity(screenStream4)
 
 const screenTransform4 = new Entity()
@@ -21,7 +21,7 @@ screen4.setParent(screenTransform4)
 screenTransform4.getComponent(Transform).scale.setAll(0.6) // You can change the scale of the screen here...
 
 const videoClip = new VideoClip(
-    'https://player.vimeo.com/external/722836267.m3u8?s=a807aa2dffcfe91c057f69390533a5d5d478caa4'
+    'https://player.vimeo.com/external/724342199.m3u8?s=44028b9024f117d5ea5a923de6c05461f777401b'
 )
 const videoTexture = new VideoTexture(videoClip)
 videoTexture.play()

@@ -21,7 +21,7 @@ screen3.setParent(screenTransform3)
 screenTransform3.getComponent(Transform).scale.setAll(0.6) // You can change the scale of the screen here...
 
 const videoClip = new VideoClip(
-    'https://player.vimeo.com/external/722840634.m3u8?s=4b5289e586153f7bffcf1ec27f93a3e12f7348c8'
+    'https://player.vimeo.com/external/724342222.m3u8?s=bc748bd486bc48e65dd161b200bab7376b586a63'
 )
 const videoTexture = new VideoTexture(videoClip)
 videoTexture.play()
