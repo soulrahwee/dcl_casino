@@ -17,5 +17,6 @@
     "titleBar.border": "#1857a4",
     "titleBar.inactiveBackground": "#1857a499"
   },
-  "peacock.color": "#1857a4"
+  "peacock.color": "#1857a4",
+  "cSpell.words": ["GLTF"]
 }
