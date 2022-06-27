@@ -3,6 +3,8 @@ import { createScene } from './scene'
 import { sound } from './sound'
 import stream1 = require("stream/stream1")
 import stream2 = require("stream/stream2")
+import stream3 = require("stream/stream3")
+import stream4 = require("stream/stream4")
 
 // love to code . come
 
