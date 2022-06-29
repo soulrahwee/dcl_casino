@@ -2,22 +2,28 @@ import { stick } from './npc&sound/npc'
 import { createScene } from './scene'
 import { sound } from './npc&sound/sound'
 // import { createVideoStream } from "./stream/stream1";
-import { woman } from './npc&sound/animation';
+import { woman } from './npc&sound/waitress';
+import { dancingGirl } from './npc&sound/dancing';
+import { counter } from './npc&sound/counter';
 
 // love to code . come
 // create casino scene
 // createScene()
 // create stick NPC
-stick(15, 0, 1)
-woman(1, 0, 15)
+
 // video streaming
 // createVideoStream()
 
 // create
+// npc
+// stick(15, 0, 1)
+// woman(12, 0, 25)
+// dancingGirl(3, 4, 71)
+// dancingGirl(21.5, 4, 71)
+// counter(1, 0, 1)
 // sound
 // sound place in hall
 // mid
-sound
 sound(30, 9.5, 62.8)
 sound(30, 9.5, 27.4)
 sound(30, 10, 91)

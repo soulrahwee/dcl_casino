@@ -21,13 +21,11 @@ export function stick(x: number, y: number, z: number): void{
             typeSpeed:30,
         },
         {
-            text:"Do you want to play some game with me?",
+            text:"Do you want to play some game with me ?",
             offsetX:60,
             offsetY:0,
             fontSize:38,
             typeSpeed: 30,
-            isQuestion: true,
-            
             buttons: [
                 {label: "Yes", goToDialog: 'yes', triggeredActions() {
                     stick.playAnimation('Duck', true)
@@ -36,6 +34,7 @@ export function stick(x: number, y: number, z: number): void{
                     stick.playAnimation('No',true)
                 }},
             ],
+            isQuestion: true,
         },
         {   name:'yes',
             text:'Welcome to GOLDENEYE Casino!',
