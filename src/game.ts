@@ -11,6 +11,9 @@ import stream7 = require("stream/stream7")
 import stream8 = require("stream/stream8")
 import stream9 = require("stream/stream9")
 import stream10 = require("stream/stream10")
+import stream11 = require("stream/stream11")
+import stream12 = require("stream/stream12")
+import stream13 = require("stream/stream13")
 
 // love to code . come
 
