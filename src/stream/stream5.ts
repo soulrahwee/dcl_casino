@@ -5,7 +5,7 @@ stream5.addComponent(new Transform({ scale: new Vector3(1, 1, 0) }))
 engine.addEntity(stream5)
 
 const screenStream5 = new Entity()
-screenStream5.addComponent(new Transform({ position: new Vector3(-18, 1.99, 96.50), rotation: Quaternion.Euler(0, 0, 0) }))
+screenStream5.addComponent(new Transform({ position: new Vector3(-20.70, 1.99, 96.46), rotation: Quaternion.Euler(180, -182, 180) }))
 engine.addEntity(screenStream5)
 
 const screenTransform5 = new Entity()
