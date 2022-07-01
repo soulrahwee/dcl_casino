@@ -5,7 +5,7 @@ stream1.addComponent(new Transform({ scale: new Vector3(1, 1, 0) }))
 engine.addEntity(stream1)
 
 const screenStream1 = new Entity()
-screenStream1.addComponent(new Transform({ position: new Vector3(6.90, 2, 45.99), rotation: Quaternion.Euler(0, 0, 0) }))
+screenStream1.addComponent(new Transform({ position: new Vector3(6.78, 2, 45.93), rotation: Quaternion.Euler(0, 181.01, 0) }))
 engine.addEntity(screenStream1)
 
 const screenTransform1 = new Entity()
@@ -15,7 +15,7 @@ screenTransform1.setParent(screenStream1)
 
 const screen1 = new Entity()
 screen1.addComponent(new PlaneShape())
-screen1.addComponent(new Transform({ scale: new Vector3(13.60, 6, 6) }))
+screen1.addComponent(new Transform({ scale: new Vector3(14.02, 6.60, 6.60) }))
 screen1.getComponent(Transform).rotate(Vector3.Up(), 0)
 screen1.setParent(screenTransform1)
 screenTransform1.getComponent(Transform).scale.setAll(0.6) // You can change the scale of the screen here...
@@ -25,7 +25,6 @@ const videoClip = new VideoClip(
 )
 const videoTexture = new VideoTexture(videoClip)
 videoTexture.play()
-
 videoTexture.loop = true
 
 // Adjust screen material to increase the brightness and clarity
