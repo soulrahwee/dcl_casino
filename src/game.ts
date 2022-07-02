@@ -8,7 +8,7 @@ import { counter } from './npc&sound/counter';
 
 // love to code . come
 // create casino scene
-createScene()
+// createScene()
 // create stick NPC
 
 // video streaming

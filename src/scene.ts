@@ -1,6 +1,6 @@
 export function createScene(){
 
-    const deflatedScale = new Vector3(0.6, 0.6, 0.6)
+    const deflatedScale = new Vector3(0.1, 0.1, 0.1)
     const scene = new Entity()
     engine.addEntity(scene)
     scene.addComponent(new GLTFShape('models/Build_Casino-rev10.glb'))
