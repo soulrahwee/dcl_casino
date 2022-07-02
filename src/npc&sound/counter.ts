@@ -86,7 +86,7 @@ export function counter(x: number, y: number, z: number):void{
         },
     })
     // 
-    counter.addComponent(new Transform({rotation:new Quaternion(0,90,0)}))
+    counter.addComponent(new Transform({rotation: Quaternion.Euler(0,90,0)}))
     // dialog window
     let dialopwindow = new DialogWindow({path:'images/counter.png', height: 280, width: 280},true)
     
